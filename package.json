@@ -1,0 +1,24 @@
+{
+  "name": "bamazonproject",
+  "version": "1.0.0",
+  "description": "A rip off of Amazon plz no sue Jeff Bezos # Pseudo Code 1. Create a DB for backend.     * make sure the db has the correct col and id 2. Make products table in back end.     * item_id (unique id for each product)",
+  "main": "bamazon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ad-victoriam-101/BamazonProject.git"
+  },
+  "author": "Brogan Stich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ad-victoriam-101/BamazonProject/issues"
+  },
+  "homepage": "https://github.com/ad-victoriam-101/BamazonProject#readme",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "inquirer": "^6.2.0",
+    "mysql": "^2.16.0"
+  }
+}
