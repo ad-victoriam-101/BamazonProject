@@ -2,6 +2,7 @@
 var mysql = require("mysql");
 const inquirer = require("inquirer");
 const Table = require('cli-table');
+var table = new Table();
 
 var connection = mysql.createConnection({
     host: "localhost",
@@ -22,12 +23,15 @@ connection.connect(function (err) {
     bamazonStart();
 });
 
-function bamazonStart(); {
+function bamazonStart() {
     console.log("Welcome to Bamazon!")
     connection.query("SELECT * FROM products", function (err, res) {
             if (err) throw err;
             // Log all results of the SELECT statement
             console.log(res);
+            console.log('======================================');
+            table.push(test);
+            console.log(table.toString());
             connection.end();
         });
 }
