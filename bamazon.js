@@ -25,13 +25,32 @@ connection.connect(function (err) {
 
 function bamazonStart() {
     console.log("Welcome to Bamazon!")
+    // show user the table data of current inventory.
     connection.query("SELECT * FROM products", function (err, res) {
             if (err) throw err;
             // Log all results of the SELECT statement
             console.log(res);
             console.log('======================================');
-            table.push(test);
+            table.push(res);
             console.log(table.toString());
-            connection.end();
+            inquirerStart();
         });
+}
+function inquirerStart(){
+    inquirer
+        .prompt([
+            {
+                type: "input",
+                name: "userChoice",
+                message: "What Item do you want to buy today? via ID number."
+            },
+            {
+                type:"input",
+                name:"quantItem",
+                message:"How many do you want?"
+            }
+        ]).then(function(userInput){
+            console.log(userInput);
+
+        })
 }
