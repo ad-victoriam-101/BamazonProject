@@ -51,6 +51,7 @@ function inquirerStart(){
             }
         ]).then(function(userInput){
             console.log(userInput);
+            connection.query("SELECT * FROM products")
 
         })
 }
