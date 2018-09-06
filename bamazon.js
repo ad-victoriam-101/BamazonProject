@@ -104,16 +104,6 @@ function displayInventory() {
         });
 
         console.log(table.toString());
-		// for (var i = 0; i < data.length; i++) {
-		// 	strOut = '';
-		// 	strOut += 'Item ID: ' + data[i].item_id + '  //  ';
-		// 	strOut += 'Product Name: ' + data[i].product_name + '  //  ';
-		// 	strOut += 'Department: ' + data[i].department_name + '  //  ';
-		// 	strOut += 'Price: $' + data[i].price + '\n';
-
-		// 	console.log(strOut);
-		// }
-
 	  	console.log("---------------------------------------------------------------------\n");
 
 
